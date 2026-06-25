@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY", ""))
-MODEL = os.environ.get("MODEL", "claude-fable-5")
+MODEL = os.environ.get("MODEL", "claude-opus-4-8")
 
 INVITE_CODE = os.environ.get("INVITE_CODE", "")
 DAILY_LIMIT = int(os.environ.get("DAILY_LIMIT", 300))

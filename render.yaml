@@ -6,7 +6,7 @@ services:
     plan: free
     rootDir: .
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -w 1 -b 0.0.0.0:$PORT src.app:app
+    startCommand: gunicorn -w 1 --chdir src -b 0.0.0.0:$PORT app:app
     envVars:
       - key: ANTHROPIC_API_KEY
         sync: false            # you'll paste this in the Render dashboard

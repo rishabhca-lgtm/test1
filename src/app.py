@@ -86,17 +86,33 @@ def chat():
 
     messages = history + [{"role": "user", "content": message}]
 
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 3}]
+
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=500,
+            max_tokens=700,
             system=system_prompt,
+            tools=tools,
             messages=messages,
         )
 
+        # Handle pause_turn: server-side tool loop hit its iteration cap — continue
+        loop_messages = list(messages)
+        while response.stop_reason == "pause_turn":
+            loop_messages = loop_messages + [{"role": "assistant", "content": response.content}]
+            response = client.messages.create(
+                model=MODEL,
+                max_tokens=700,
+                system=system_prompt,
+                tools=tools,
+                messages=loop_messages,
+            )
+
+        # Extract the final text reply (skip tool-use/search-result blocks)
         reply = ""
         for block in response.content:
-            if hasattr(block, "text"):
+            if hasattr(block, "text") and block.type == "text":
                 reply = block.text
                 break
 

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Krishna — NRP Capitals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --midnight:    #050D2E;
+      --deep:        #080F38;
+      --card:        #0C1640;
+      --bubble-k:    #091232;
+      --bubble-u:    #0F1E52;
+      --gold:        #F5C518;
+      --gold-light:  #FFD700;
+      --gold-dim:    #9A7B10;
+      --teal:        #00C9A7;
+      --teal-dim:    #007F69;
+      --lotus:       #D4829A;
+      --text:        #EDE8E0;
+      --text-dim:    #8A93B8;
+      --border:      rgba(245,197,24,0.15);
+      --border-teal: rgba(0,201,167,0.2);
+      --glow-gold:   0 0 20px rgba(245,197,24,0.12);
+      --glow-teal:   0 0 20px rgba(0,201,167,0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--midnight);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg, #040B28 0%, #091232 60%, #050D2E 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(245,197,24,0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .krishna-avatar {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #1A3A7A, #0C1F55);
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: var(--glow-gold);
+      flex-shrink: 0;
+    }
+
+    .header-titles h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+
+    .header-titles p {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nrp-badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--teal);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(0,201,167,0.08);
+      border: 1px solid var(--border-teal);
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── MODE SELECTOR ── */
+    .mode-bar {
+      background: var(--deep);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .mode-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      margin-right: 4px;
+    }
+
+    .mode-btn {
+      background: transparent;
+      border: 1px solid rgba(245,197,24,0.2);
+      color: var(--text-dim);
+      font-family: 'Playfair Display', serif;
+      font-size: 0.8rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-style: italic;
+    }
+
+    .mode-btn:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .mode-btn.active {
+      background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(245,197,24,0.08));
+      border-color: var(--gold);
+      color: var(--gold);
+      box-shadow: var(--glow-gold);
+    }
+
+    .mode-hint {
+      margin-left: auto;
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    /* ── CHAT AREA ── */
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      scroll-behavior: smooth;
+    }
+
+    #chat::-webkit-scrollbar { width: 4px; }
+    #chat::-webkit-scrollbar-track { background: transparent; }
+    #chat::-webkit-scrollbar-thumb { background: rgba(245,197,24,0.2); border-radius: 2px; }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      max-width: 82%;
+      animation: fadeUp 0.3s ease;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .message.krishna { align-self: flex-start; }
+    .message.user    { align-self: flex-end; }
+
+    .message-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 5px;
+    }
+
+    .message.krishna .message-header { justify-content: flex-start; }
+    .message.user    .message-header { justify-content: flex-end; }
+
+    .sender-name {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .message.krishna .sender-name { color: var(--gold); }
+    .message.user    .sender-name { color: var(--teal); }
+
+    .mode-tag {
+      font-size: 0.58rem;
+      font-style: italic;
+      color: var(--text-dim);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bubble {
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .message.krishna .bubble {
+      background: var(--bubble-k);
+      border: 1px solid rgba(245,197,24,0.18);
+      border-left: 3px solid var(--gold);
+      border-radius: 4px 14px 14px 14px;
+      font-family: 'Playfair Display', serif;
+      color: var(--text);
+    }
+
+    .message.user .bubble {
+      background: var(--bubble-u);
+      border: 1px solid rgba(0,201,167,0.18);
+      border-right: 3px solid var(--teal);
+      border-radius: 14px 4px 14px 14px;
+      color: var(--text);
+    }
+
+    .message.krishna .bubble.thinking {
+      font-style: italic;
+      color: var(--text-dim);
+    }
+
+    /* ── RATING ── */
+    .rating-row {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .rating-label {
+      font-size: 0.63rem;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .star-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 2px;
+      opacity: 0.4;
+      transition: opacity 0.15s, transform 0.1s;
+      line-height: 1;
+    }
+
+    .star-btn:hover,
+    .star-btn.lit { opacity: 1; }
+    .star-btn:hover { transform: scale(1.2); }
+
+    .rating-done {
+      font-size: 0.63rem;
+      color: var(--teal);
+      font-style: italic;
+    }
+
+    /* ── WELCOME CARD ── */
+    .welcome-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 4px 14px 14px 14px;
+      padding: 20px 20px 16px;
+      max-width: 500px;
+      align-self: flex-start;
+    }
+
+    .welcome-card .om {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .welcome-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .welcome-card p {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .welcome-card .cta {
+      font-size: 0.8rem;
+      color: var(--teal);
+      font-style: italic;
+    }
+
+    /* ── INPUT AREA ── */
+    .input-wrap {
+      background: var(--deep);
+      border-top: 1px solid var(--border);
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+
+    #userInput {
+      flex: 1;
+      background: var(--card);
+      border: 1px solid rgba(245,197,24,0.2);
+      border-radius: 12px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      padding: 10px 14px;
+      resize: none;
+      min-height: 44px;
+      max-height: 120px;
+      line-height: 1.5;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    #userInput::placeholder { color: var(--text-dim); }
+    #userInput:focus { border-color: rgba(245,197,24,0.5); }
+
+    #sendBtn {
+      background: linear-gradient(135deg, var(--gold), #D4A017);
+      border: none;
+      border-radius: 12px;
+      color: #050D2E;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      height: 44px;
+      width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s, transform 0.1s;
+      flex-shrink: 0;
+    }
+
+    #sendBtn:hover:not(:disabled) { opacity: 0.85; transform: scale(1.05); }
+    #sendBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--midnight);
+      border-top: 1px solid rgba(245,197,24,0.06);
+      padding: 6px 16px;
+      text-align: center;
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+
+    footer a { color: var(--gold-dim); text-decoration: none; }
+
+    /* ── ACCESS MODAL ── */
+    #modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5,13,46,0.92);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modal.open { display: flex; }
+
+    .modal-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: 16px;
+      padding: 32px 28px;
+      max-width: 360px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .modal-box .om { font-size: 2.5rem; display: block; margin-bottom: 12px; }
+    .modal-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .modal-box p { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 20px; }
+    .modal-box input {
+      width: 100%;
+      background: var(--deep);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      padding: 10px 14px;
+      border-radius: 10px;
+      outline: none;
+      margin-bottom: 12px;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    .modal-box input:focus { border-color: var(--gold); }
+    .modal-box button {
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold), #D4A017);
+      border: none;
+      border-radius: 10px;
+      color: #050D2E;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 11px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .modal-box button:hover { opacity: 0.85; }
+    .modal-error { color: #E07070; font-size: 0.75rem; margin-top: 8px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      .message { max-width: 94%; }
+      .welcome-card { max-width: 94%; }
+      .nrp-badge { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ACCESS MODAL -->
+<div id="modal">
+  <div class="modal-box">
+    <span class="om">🪷</span>
+    <h2>Enter the Vrindavan</h2>
+    <p>This is a private space. Enter your invite code to speak with Krishna.</p>
+    <input type="text" id="inviteInput" placeholder="INVITE CODE" autocomplete="off" />
+    <button onclick="submitCode()">🙏 Enter</button>
+    <div class="modal-error" id="modalError"></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <div class="krishna-avatar">🦚</div>
+    <div class="header-titles">
+      <h1>Ask Krishna</h1>
+      <p>Your Financial Charioteer · NRP Capitals</p>
+    </div>
+  </div>
+  <div class="nrp-badge">NRP Capitals</div>
+</header>
+
+<!-- MODE BAR -->
+<div class="mode-bar">
+  <span class="mode-label">Mode:</span>
+  <button class="mode-btn" data-mode="sakha" onclick="setMode('sakha')">Sakha</button>
+  <button class="mode-btn active" data-mode="sarathi" onclick="setMode('sarathi')">Sarathi</button>
+  <button class="mode-btn" data-mode="parth" onclick="setMode('parth')">Parth</button>
+  <span class="mode-hint" id="modeHint">सारथी · Charioteer</span>
+</div>
+
+<!-- CHAT -->
+<div id="chat">
+  <div class="welcome-card">
+    <span class="om">🦚</span>
+    <h2>Arre Parth, main hun na.</h2>
+    <p>
+      I'm Krishna — your financial charioteer. Ask me anything: SIPs, market crashes, where to start,
+      when to stop, whether that "hot tip" is worth it. I carry the wisdom of Rishabh Parakh,
+      Warren Buffett, Charlie Munger — and 700 verses of battlefield strategy.
+    </p>
+    <p>The market is your Kurukshetra. You are not alone on this chariot.</p>
+    <span class="cta">Choose your mode above and ask your first question, Parth 🙏</span>
+  </div>
+</div>
+
+<!-- INPUT -->
+<div class="input-wrap">
+  <textarea
+    id="userInput"
+    placeholder="Arre yaar, help me with..."
+    rows="1"
+    onkeydown="handleKey(event)"
+    oninput="autoResize(this)"
+  ></textarea>
+  <button id="sendBtn" onclick="sendMessage()" title="Send">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="22" y1="2" x2="11" y2="13"></line>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+    </svg>
+  </button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  Powered by <a href="#" target="_blank">NRP Capitals</a> &nbsp;·&nbsp;
+  Rishabh Parakh · CA &amp; Financial Planner &nbsp;·&nbsp;
+  Wisdom ratings improve the DataBank 🙏
+</footer>
+
+<script>
+  const MODE_LABELS = {
+    sakha:   'सखा · Best Friend',
+    sarathi: 'सारथी · Charioteer',
+    parth:   'पार्थ · Warrior Mode',
+  };
+
+  const MODE_PLACEHOLDERS = {
+    sakha:   'Yaar, I need your honest take on...',
+    sarathi: 'Arre yaar, help me with...',
+    parth:   'Parth, tell me exactly what to do about...',
+  };
+
+  let mode = 'sarathi';
+  let convId = null;
+  let inviteCode = localStorage.getItem('nrp_invite') || '';
+  let pendingMsg = null;
+
+  // ── INIT ──
+  window.addEventListener('load', () => {
+    checkAccess();
+  });
+
+  function checkAccess() {
+    fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: 'ping', invite_code: inviteCode, mode: 'sarathi' })
+    }).then(r => {
+      if (r.status === 401) showModal();
+    }).catch(() => {});
+  }
+
+  function showModal() {
+    document.getElementById('modal').classList.add('open');
+    document.getElementById('inviteInput').focus();
+  }
+
+  function submitCode() {
+    const code = document.getElementById('inviteInput').value.trim();
+    if (!code) return;
+    inviteCode = code;
+    document.getElementById('modal').classList.remove('open');
+    localStorage.setItem('nrp_invite', code);
+    if (pendingMsg) { sendMessage(); pendingMsg = null; }
+  }
+
+  document.getElementById('inviteInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') submitCode();
+  });
+
+  // ── MODE ──
+  function setMode(m) {
+    mode = m;
+    document.querySelectorAll('.mode-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.mode === m);
+    });
+    document.getElementById('modeHint').textContent = MODE_LABELS[m] || '';
+    document.getElementById('userInput').placeholder = MODE_PLACEHOLDERS[m] || '';
+  }
+
+  // ── SEND ──
+  function handleKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  }
+
+  function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+  }
+
+  async function sendMessage() {
+    const input = document.getElementById('userInput');
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    appendMessage('user', msg);
+    input.value = '';
+    input.style.height = 'auto';
+
+    const btn = document.getElementById('sendBtn');
+    btn.disabled = true;
+
+    const thinkingEl = appendMessage('krishna', 'Krishna is thinking...', { thinking: true, mode });
+
+    try {
+      const res = await fetch('/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg, mode, conv_id: convId, invite_code: inviteCode }),
+      });
+
+      if (res.status === 401) {
+        pendingMsg = msg;
+        thinkingEl.remove();
+        showModal();
+        return;
+      }
+
+      if (res.status === 429) {
+        thinkingEl.querySelector('.bubble').textContent = 'Bas, Parth. Kal milte hain — daily limit reached.';
+        thinkingEl.querySelector('.bubble').classList.remove('thinking');
+        return;
+      }
+
+      const data = await res.json();
+      if (data.error) {
+        thinkingEl.querySelector('.bubble').textContent = data.error;
+        thinkingEl.querySelector('.bubble').classList.remove('thinking');
+        return;
+      }
+
+      convId = data.conv_id;
+      const bubble = thinkingEl.querySelector('.bubble');
+      bubble.textContent = data.reply;
+      bubble.classList.remove('thinking');
+
+      addRating(thinkingEl, msg, data.reply, data.mode);
+      scrollBottom();
+
+    } catch (err) {
+      thinkingEl.querySelector('.bubble').textContent = 'Krishna is in samadhi. Try again shortly.';
+      thinkingEl.querySelector('.bubble').classList.remove('thinking');
+    } finally {
+      btn.disabled = false;
+      input.focus();
+    }
+  }
+
+  function appendMessage(who, text, opts = {}) {
+    const chat = document.getElementById('chat');
+    const wrap = document.createElement('div');
+    wrap.className = `message ${who}`;
+
+    const header = document.createElement('div');
+    header.className = 'message-header';
+
+    const name = document.createElement('span');
+    name.className = 'sender-name';
+    name.textContent = who === 'krishna' ? 'Krishna' : 'You';
+    header.appendChild(name);
+
+    if (who === 'krishna' && opts.mode) {
+      const tag = document.createElement('span');
+      tag.className = 'mode-tag';
+      tag.textContent = `· ${opts.mode}`;
+      header.appendChild(tag);
+    }
+
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble' + (opts.thinking ? ' thinking' : '');
+    bubble.textContent = text;
+
+    wrap.appendChild(header);
+    wrap.appendChild(bubble);
+    chat.appendChild(wrap);
+    scrollBottom();
+    return wrap;
+  }
+
+  function addRating(msgEl, userMsg, reply, msgMode) {
+    const row = document.createElement('div');
+    row.className = 'rating-row';
+
+    const label = document.createElement('span');
+    label.className = 'rating-label';
+    label.textContent = 'Gita-approved?';
+    row.appendChild(label);
+
+    for (let i = 1; i <= 5; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'star-btn';
+      btn.textContent = '★';
+      btn.title = `${i * 2}/10`;
+      btn.addEventListener('click', async () => {
+        if (row.querySelector('.rating-done')) return;
+        document.querySelectorAll('.star-btn', row).forEach(b => b.classList.remove('lit'));
+        row.querySelectorAll('.star-btn').forEach((b, idx) => {
+          if (idx < i) b.classList.add('lit');
+        });
+        await submitRating(i * 2, userMsg, reply, msgMode);
+        const done = document.createElement('span');
+        done.className = 'rating-done';
+        done.textContent = '🙏 Jai Shri Krishna';
+        row.appendChild(done);
+      });
+      row.appendChild(btn);
+    }
+
+    msgEl.appendChild(row);
+  }
+
+  async function submitRating(score, message, reply, ratingMode) {
+    try {
+      await fetch('/rate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ score, message, reply, mode: ratingMode, conv_id: convId }),
+      });
+    } catch (_) {}
+  }
+
+  function scrollBottom() {
+    const chat = document.getElementById('chat');
+    requestAnimationFrame(() => {
+      chat.scrollTo({ top: chat.scrollHeight, behavior: 'smooth' });
+    });
+  }
+
+  // Initialize mode
+  setMode('sarathi');
+</script>
+</body>
+</html>

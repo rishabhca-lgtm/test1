@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: krishna-advisor
+    runtime: python
+    region: singapore          # closest to India
+    plan: free
+    rootDir: .
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 -b 0.0.0.0:$PORT src.app:app
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false            # you'll paste this in the Render dashboard
+      - key: MODEL
+        value: claude-fable-5
+      - key: INVITE_CODE
+        sync: false            # optional — leave blank to disable
+      - key: DAILY_LIMIT
+        value: "300"
+      - key: PER_IP_LIMIT
+        value: "30"
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+    healthCheckPath: /health

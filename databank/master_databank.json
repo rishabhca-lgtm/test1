@@ -1,0 +1,263 @@
+[
+  {
+    "id": "rp_001",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "sip_consistency",
+    "quote": "SIP is not about timing the market. It's about time IN the market. Do it every month like you pay rent — because your future self deserves that discipline.",
+    "context": "On systematic investment plans and the power of consistency over smartness",
+    "tags": ["SIP", "mutual funds", "consistency", "discipline", "long-term"],
+    "krishna_angle": "Karma Yoga of investing — do your duty every month, release attachment to daily NAV"
+  },
+  {
+    "id": "rp_002",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "emergency_fund",
+    "quote": "Before you invest a single rupee, build your emergency fund. 6 months of expenses, liquid, untouched. That is not fear — that is wisdom.",
+    "context": "On financial foundations and why emergency fund comes before any investment",
+    "tags": ["emergency fund", "liquidity", "financial foundation", "safety", "basics"],
+    "krishna_angle": "The Kavach — your protective armour before riding into the battlefield of markets"
+  },
+  {
+    "id": "rp_003",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "term_insurance",
+    "quote": "Term insurance is the most powerful financial product most people ignore. Pure protection, lowest cost, maximum cover. If you have dependents and no term plan, you are gambling with their future.",
+    "context": "On why term insurance is non-negotiable for anyone with financial dependents",
+    "tags": ["insurance", "term plan", "protection", "life cover", "dependents"],
+    "krishna_angle": "The Sudarshana Chakra — simple, decisive, all-protecting. Don't complicate what just needs to work."
+  },
+  {
+    "id": "rp_004",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "goal_based_investing",
+    "quote": "Invest for your goals, not for returns. The moment you chase returns, you've already lost your compass. Define the goal — child's education, home, retirement — then work backwards.",
+    "context": "On goal-based financial planning as opposed to return-chasing",
+    "tags": ["goals", "financial planning", "returns", "purpose", "retirement", "education"],
+    "krishna_angle": "Arjuna aimed at the eye of the fish — one clear goal, not the entire bird. Focus creates results."
+  },
+  {
+    "id": "rp_005",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "financial_freedom",
+    "quote": "Financial freedom means your money works while you sleep. It is not about being rich — it is about never being trapped by the fear of not having enough.",
+    "context": "On redefining wealth as freedom rather than accumulation",
+    "tags": ["financial freedom", "passive income", "independence", "wealth", "mindset"],
+    "krishna_angle": "The ultimate Moksha of personal finance — freedom from financial anxiety is the highest return"
+  },
+  {
+    "id": "rp_006",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "start_early",
+    "quote": "The best time to start investing was yesterday. The second best time is today with whatever you have — even ₹500. Compounding doesn't care about the amount, it cares about the time.",
+    "context": "On overcoming the mental barrier of 'not having enough' to start investing",
+    "tags": ["start early", "compounding", "SIP", "young investors", "beginning"],
+    "krishna_angle": "Don't wait for the perfect moment, Parth. The chariot moves when you pick up the reins, not when you feel ready."
+  },
+  {
+    "id": "rp_007",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "mutual_funds",
+    "quote": "Mutual funds are the great equaliser. The same basket of Sensex stocks that a billionaire holds — you can hold too, with ₹1000 a month. Don't let complexity steal your access to good investments.",
+    "context": "On mutual funds as democratised investing for middle-class India",
+    "tags": ["mutual funds", "index funds", "SIP", "equities", "accessibility", "democratise"],
+    "krishna_angle": "The divine economy — everyone on the battlefield of wealth deserves the same weapons, not just the kings"
+  },
+  {
+    "id": "rp_008",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "asset_allocation",
+    "quote": "Asset allocation is your battlefield strategy. Equity for growth, debt for stability, gold for the unpredictable. Know your timeline, know your temperament, then decide the mix.",
+    "context": "On the importance of asset allocation matching risk appetite and time horizon",
+    "tags": ["asset allocation", "equity", "debt", "gold", "risk", "portfolio", "diversification"],
+    "krishna_angle": "Kurukshetra strategy — every army on the right flank. Equity soldiers in front, debt as reserves, gold as the wild card."
+  },
+  {
+    "id": "rp_009",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "simplicity",
+    "quote": "The best financial plan is the one you will actually follow. Complexity is the enemy of action. Two mutual funds, one SIP, one term plan — that simple portfolio beats the 'sophisticated' one the investor abandoned.",
+    "context": "On simplicity as a financial virtue — the plan you follow beats the perfect plan you don't",
+    "tags": ["simplicity", "consistency", "financial plan", "execution", "behaviour"],
+    "krishna_angle": "Gita in 18 chapters, essence in one shloka. Your entire financial plan should fit on one page."
+  },
+  {
+    "id": "rp_010",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "market_volatility",
+    "quote": "Market corrections are not the enemy — they are the discount sale. The investor who panics and exits is the one who bought at the top and sold at the bottom. Stay. The market recovers. It always has.",
+    "context": "On staying invested through market downturns and corrections",
+    "tags": ["market crash", "volatility", "bear market", "correction", "stay invested", "patience"],
+    "krishna_angle": "The battle has dark moments. The warrior who retreats in the first hour loses. The one who holds position wins."
+  },
+  {
+    "id": "rp_011",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "debt_management",
+    "quote": "Bad debt is the compound interest working against you. Pay off high-interest debt — credit cards, personal loans — before you invest a single rupee in equity. The math is brutal on both sides.",
+    "context": "On prioritising debt repayment especially high-interest consumer debt",
+    "tags": ["debt", "credit card", "personal loan", "interest", "repay", "EMI"],
+    "krishna_angle": "You cannot fight the battle carrying shackles. Clear the debt, then ride free into the wealth battlefield."
+  },
+  {
+    "id": "rp_012",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "rebalancing",
+    "quote": "Rebalance your portfolio once a year. That is it. No more, no less. Your asset allocation drifts with markets — bring it back. This one annual act prevents years of regret.",
+    "context": "On portfolio rebalancing as a simple but powerful annual practice",
+    "tags": ["rebalancing", "portfolio", "annual review", "asset allocation", "discipline"],
+    "krishna_angle": "Even the Sudarshana Chakra returns to the hand. Your portfolio needs to come back to its intended balance."
+  },
+  {
+    "id": "wb_001",
+    "source": "Warren Buffett",
+    "category": "patience",
+    "quote": "The stock market is a device for transferring money from the impatient to the patient.",
+    "context": "On patience as the primary competitive advantage of the individual investor",
+    "tags": ["patience", "long-term", "stock market", "behaviour", "compounding"],
+    "krishna_angle": "Buffett sat on the chariot for decades without swinging his sword unnecessarily. That patience is his superpower."
+  },
+  {
+    "id": "wb_002",
+    "source": "Warren Buffett",
+    "category": "fear_greed",
+    "quote": "Be fearful when others are greedy, and greedy when others are fearful.",
+    "context": "On contrarian thinking and using market emotions as signals",
+    "tags": ["contrarian", "fear", "greed", "market sentiment", "buying dips", "crash"],
+    "krishna_angle": "When everyone dropped their bow in fear, Arjuna picked his up. The crash is when the warrior moves."
+  },
+  {
+    "id": "wb_003",
+    "source": "Warren Buffett",
+    "category": "circle_of_competence",
+    "quote": "Never invest in a business you cannot understand.",
+    "context": "On staying within your circle of competence and avoiding complexity traps",
+    "tags": ["understanding", "research", "stocks", "complexity", "simplicity", "knowledge"],
+    "krishna_angle": "Know your battlefield. Arjuna knew archery — he didn't try to fight like Bhima. Invest in what you understand."
+  },
+  {
+    "id": "wb_004",
+    "source": "Warren Buffett",
+    "category": "long_term",
+    "quote": "If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes.",
+    "context": "On the long-term mindset as a prerequisite for equity investing",
+    "tags": ["long-term", "equity", "holding", "patience", "ten years", "horizon"],
+    "krishna_angle": "Commit to the battlefield, Parth. Half-hearted warriors lose. Full commitment — then the outcome takes care of itself."
+  },
+  {
+    "id": "wb_005",
+    "source": "Warren Buffett",
+    "category": "risk",
+    "quote": "Risk comes from not knowing what you are doing.",
+    "context": "On how ignorance — not markets — is the true source of investment risk",
+    "tags": ["risk", "knowledge", "ignorance", "research", "understanding"],
+    "krishna_angle": "The unarmed warrior is the dangerous one — not because the enemy is strong, but because he himself is unprepared."
+  },
+  {
+    "id": "cm_001",
+    "source": "Charlie Munger",
+    "category": "inversion",
+    "quote": "Invert, always invert. Tell me where I'm going to die, so I'll never go there.",
+    "context": "On inverting problems — instead of asking how to get rich, ask how people go broke",
+    "tags": ["inversion", "mistakes", "avoid", "mental models", "thinking", "risk"],
+    "krishna_angle": "Krishna didn't just show Arjuna the path to victory — he showed him every path to defeat first. Know what kills before you charge."
+  },
+  {
+    "id": "cm_002",
+    "source": "Charlie Munger",
+    "category": "compounding",
+    "quote": "The first rule of compounding: never interrupt it unnecessarily.",
+    "context": "On why staying invested and not redeeming early is the single most important rule",
+    "tags": ["compounding", "stay invested", "SIP", "redeem", "patience", "wealth building"],
+    "krishna_angle": "The Banyan tree doesn't ask to be checked every week. You plant it, you water it, you leave it alone. That is compounding."
+  },
+  {
+    "id": "cm_003",
+    "source": "Charlie Munger",
+    "category": "learning",
+    "quote": "I have nothing to add — said after Buffett spoke. The best investors know when to be quiet and let compounding speak.",
+    "context": "On the wisdom of simplicity and silence in investing — less action is often better",
+    "tags": ["simplicity", "less is more", "inaction", "patience", "compounding", "quiet"],
+    "krishna_angle": "The Gita's most powerful moment: Krishna stops talking and lets Arjuna decide. Sometimes the best move is stillness."
+  },
+  {
+    "id": "pl_001",
+    "source": "Peter Lynch",
+    "category": "local_knowledge",
+    "quote": "Invest in what you know. Your best investment idea might be sitting right in your neighbourhood or in your shopping cart.",
+    "context": "On using everyday consumer experience as a source of investment insight",
+    "tags": ["invest in what you know", "consumer", "local", "observation", "stocks", "research"],
+    "krishna_angle": "Arjuna was the greatest archer because he practiced where he stood. Your edge comes from your own life's observations."
+  },
+  {
+    "id": "pl_002",
+    "source": "Peter Lynch",
+    "category": "market_fear",
+    "quote": "The real key to making money in stocks is not to get scared out of them.",
+    "context": "On emotional resilience as the investor's most important trait",
+    "tags": ["fear", "volatility", "stay invested", "emotions", "equity", "market crash"],
+    "krishna_angle": "Parth's biggest battle wasn't against Karna — it was against his own fear on day one. Same for every investor."
+  },
+  {
+    "id": "bg_001",
+    "source": "Benjamin Graham",
+    "category": "mr_market",
+    "quote": "Mr. Market is your servant, not your master. When he panics and offers you a great business at a silly price, thank him and buy.",
+    "context": "On the Mr. Market parable and using market irrationality to your advantage",
+    "tags": ["Mr. Market", "valuation", "buying dips", "irrational", "opportunity", "value investing"],
+    "krishna_angle": "The marketplace of the world goes mad sometimes. The calm warrior sees opportunity where the crowd sees catastrophe."
+  },
+  {
+    "id": "bg_002",
+    "source": "Benjamin Graham",
+    "category": "margin_of_safety",
+    "quote": "The margin of safety is the central concept of investment. Never pay the full price when a discount protects you from being wrong.",
+    "context": "On margin of safety as a fundamental investment principle",
+    "tags": ["margin of safety", "valuation", "risk", "value investing", "discount", "protection"],
+    "krishna_angle": "A warrior doesn't walk into battle without armour. The margin of safety is your financial armour — always wear it."
+  },
+  {
+    "id": "gita_001",
+    "source": "Bhagavad Gita",
+    "category": "nishkama_karma",
+    "quote": "Karmanye vadhikaraste ma phaleshu kadachana — You have a right to perform your prescribed duties, but you are not entitled to the fruits of those actions.",
+    "context": "Chapter 2, Verse 47 — the most famous verse on detachment from outcomes",
+    "tags": ["SIP", "discipline", "process", "detachment", "outcomes", "long-term", "patience"],
+    "krishna_angle": "Do your SIP every month. Don't obsess over the NAV. The fruit will come — but the karma (action) is yours to control."
+  },
+  {
+    "id": "gita_002",
+    "source": "Bhagavad Gita",
+    "category": "arjuna_paralysis",
+    "quote": "Arjuna, why do you grieve? Rise, perform your duty. The battlefield waits for no one.",
+    "context": "On analysis paralysis — the paralysis before action that costs more than any bad decision",
+    "tags": ["analysis paralysis", "procrastination", "start", "action", "overthinking", "decision"],
+    "krishna_angle": "The investor who waits for the perfect entry point never enters. Parth, pick up the bow."
+  },
+  {
+    "id": "gita_003",
+    "source": "Bhagavad Gita",
+    "category": "equanimity",
+    "quote": "Treat pleasure and pain, gain and loss, victory and defeat with equanimity.",
+    "context": "On maintaining emotional equanimity through bull and bear markets alike",
+    "tags": ["equanimity", "market crash", "bull market", "emotions", "mental health", "behaviour"],
+    "krishna_angle": "The market will give you both highs and lows. The investor who stays equally calm through both — that is the true wealth warrior."
+  },
+  {
+    "id": "gita_004",
+    "source": "Bhagavad Gita",
+    "category": "dharma",
+    "quote": "It is better to strive in one's own dharma than to succeed in the dharma of another.",
+    "context": "On staying true to your own financial goals and not chasing what others are investing in",
+    "tags": ["dharma", "FOMO", "personal goals", "comparison", "peer pressure", "individuality"],
+    "krishna_angle": "Your neighbour bought crypto and made money. Your brother-in-law is in real estate. Your dharma is YOUR financial goal — not theirs."
+  },
+  {
+    "id": "gita_005",
+    "source": "Bhagavad Gita",
+    "category": "knowledge_action",
+    "quote": "Knowledge without action is as useless as a lamp that gives no light.",
+    "context": "On the gap between financial knowledge and financial action — information alone does not build wealth",
+    "tags": ["action", "knowledge", "procrastination", "implementation", "start", "execution"],
+    "krishna_angle": "Knowing the Gita and living the Gita are two different things. Knowing about SIPs and starting one — same difference."
+  }
+]

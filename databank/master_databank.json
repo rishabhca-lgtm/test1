@@ -259,5 +259,122 @@
     "context": "On the gap between financial knowledge and financial action — information alone does not build wealth",
     "tags": ["action", "knowledge", "procrastination", "implementation", "start", "execution"],
     "krishna_angle": "Knowing the Gita and living the Gita are two different things. Knowing about SIPs and starting one — same difference."
+  },
+  {
+    "id": "ns_001",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "asset_allocation",
+    "quote": "Asset allocation is like building a cricket team. You need batsmen, bowlers, and all-rounders. A team of 11 batsmen looks great in theory but loses every match. Equity is your batting order, debt is your defence, gold is your wild card.",
+    "context": "On why balanced asset allocation always beats concentration in one asset class",
+    "tags": ["asset allocation", "equity", "debt", "gold", "diversification", "portfolio", "balance", "cricket"],
+    "krishna_angle": "The Pandava army had warriors of every kind — that is why they won. One weapon type never wins a war."
+  },
+  {
+    "id": "ns_002",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "market_behaviour",
+    "quote": "Markets are always right in the long run, even if they are wrong in the short run. The investor's job is not to be smarter than the market today — it is to still be invested when the market is right tomorrow.",
+    "context": "On long-term faith in markets versus short-term noise and panic",
+    "tags": ["market", "long-term", "patience", "stay invested", "volatility", "trust"],
+    "krishna_angle": "Krishna knew the outcome of Kurukshetra from day one. The warriors did not. Their job was to show up and fight — not predict which hour they would win."
+  },
+  {
+    "id": "ns_003",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "investor_behaviour",
+    "quote": "The biggest risk in investing is not market risk. It is investor behaviour risk — the risk that you will do the wrong thing at the wrong time because of fear or greed.",
+    "context": "On how investor emotions cause more damage than market volatility ever could",
+    "tags": ["behaviour", "emotions", "fear", "greed", "risk", "discipline", "psychology"],
+    "krishna_angle": "Arjuna's real enemy on day one was not Karna or Drona. It was his own mind. Same for every investor."
+  },
+  {
+    "id": "ns_004",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "equity_timeframe",
+    "quote": "Equity is for goals that are 5 years or more away. Debt is for goals within 3 years. Hybrid for goals in between. This one rule, followed consistently, prevents 90% of investing mistakes.",
+    "context": "On matching investment instruments to goal timelines",
+    "tags": ["equity", "debt", "hybrid", "goal", "timeline", "5 years", "3 years", "matching", "suitability"],
+    "krishna_angle": "You do not use a long bow for close combat or a sword for distance archery. Match your weapon to your battlefield distance."
+  },
+  {
+    "id": "ns_005",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "sip_discipline",
+    "quote": "SIP forces you to invest when you do not feel like it. That is exactly when investing matters most.",
+    "context": "On SIP as a discipline mechanism that removes emotion from investing decisions",
+    "tags": ["SIP", "discipline", "consistency", "mutual funds", "emotion", "automation", "habit"],
+    "krishna_angle": "A warrior who trains only when motivated loses. One who trains every day regardless of mood — that warrior wins Kurukshetra."
+  },
+  {
+    "id": "ns_006",
+    "source": "CA Nilesh Shah / Kotak AMC",
+    "category": "gold_silver",
+    "quote": "Gold is insurance, not an investment. It protects your portfolio when everything else falls. But insurance that becomes your entire portfolio is a different kind of risk.",
+    "context": "On gold's correct role in a portfolio — hedge and protection, not primary wealth builder",
+    "tags": ["gold", "silver", "hedge", "insurance", "portfolio", "allocation", "protection", "5-15%"],
+    "krishna_angle": "Your armour protects you in battle — but you cannot walk into Kurukshetra wearing only armour. You need a bow too."
+  },
+  {
+    "id": "rp_013",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "risk_profile",
+    "quote": "Before asking what to invest in, ask who is investing. A 25-year-old with no EMIs and a stable job can take risks a 50-year-old with three EMIs and school fees cannot. Same product, completely different answer.",
+    "context": "On why risk profiling and personal context must come before any investment recommendation",
+    "tags": ["risk profile", "age", "EMI", "liabilities", "personalised", "context", "suitability", "who"],
+    "krishna_angle": "Krishna gave Arjuna a personalised Gita — not a general lecture. He knew Arjuna's fears, his family, his dharma. That is why it worked."
+  },
+  {
+    "id": "rp_014",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "goal_first",
+    "quote": "Tell me your goal before you tell me where you want to invest. The goal is the destination. The investment is just the vehicle. You do not buy a vehicle before you know where you are going.",
+    "context": "On the absolute primacy of goal definition before product selection",
+    "tags": ["goal", "planning", "product", "vehicle", "destination", "purpose", "clarity", "first"],
+    "krishna_angle": "Arjuna did not pick up his bow and then decide what he was fighting for. He knew his dharma first. Then he picked up the bow."
+  },
+  {
+    "id": "rp_015",
+    "source": "Rishabh Parakh / NRP Capitals",
+    "category": "debt_priority",
+    "quote": "The best guaranteed return in India is eliminating 18% credit card interest. Pay off high-interest debt before you invest a single rupee in equity.",
+    "context": "On why high-interest debt repayment is the single best investment for most people carrying it",
+    "tags": ["debt", "credit card", "personal loan", "interest", "repay", "liabilities", "priority", "18%"],
+    "krishna_angle": "You cannot run into battle with a weight tied to your leg. Clear the debt. Then invest. In that order."
+  },
+  {
+    "id": "gita_006",
+    "source": "Bhagavad Gita",
+    "category": "arise_and_act",
+    "quote": "Do not yield to impotence, Arjuna. It does not become you. Shake off your faint-heartedness and arise. — Chapter 2, Verse 3",
+    "context": "Krishna snapping Arjuna out of paralysis — the original stop-overthinking-and-start moment",
+    "tags": ["action", "paralysis", "fear", "overthinking", "start", "arise", "procrastination", "courage"],
+    "krishna_angle": "Every investor who waits for the right time to start their SIP is Arjuna sitting in the chariot, not fighting. Arise, Parth."
+  },
+  {
+    "id": "gita_007",
+    "source": "Bhagavad Gita",
+    "category": "self_discipline",
+    "quote": "Let a man lift himself by his own self alone, let him not lower himself — for this self alone is the friend of oneself and the enemy of oneself. — Chapter 6, Verse 5",
+    "context": "On self-discipline as the source of both financial success and failure",
+    "tags": ["discipline", "self", "behaviour", "habits", "financial discipline", "self-control", "enemy", "friend"],
+    "krishna_angle": "The investor who follows their SIP and stays the course is their own best friend. The one who panic-sells is their own enemy."
+  },
+  {
+    "id": "gita_008",
+    "source": "Bhagavad Gita",
+    "category": "knowledge",
+    "quote": "Among all remedies, knowledge is the most purifying. — Chapter 4, Verse 38",
+    "context": "On why financial literacy is the foundation of all good investment decisions",
+    "tags": ["knowledge", "financial literacy", "education", "learning", "wisdom", "purify", "understanding"],
+    "krishna_angle": "The investor who understands what they own and why will never panic. Financial knowledge is the antidote to market fear."
+  },
+  {
+    "id": "gita_009",
+    "source": "Bhagavad Gita",
+    "category": "balance",
+    "quote": "Yoga is not for one who eats too much or too little, nor for one who sleeps too much or stays awake too much. — Chapter 6, Verse 16",
+    "context": "On balance and the middle path — applied to investing it means steady contributions, not feast-or-famine behaviour",
+    "tags": ["balance", "consistency", "moderation", "SIP", "steady", "middle path", "discipline", "yoga"],
+    "krishna_angle": "Don't put ₹50,000 in markets when excited and zero when markets fall. The middle path — steady SIP every month — is the investor's yoga."
   }
 ]

@@ -112,7 +112,7 @@ def chat():
 
     except Exception as e:
         logger.error(f"API error: {e}")
-        return jsonify({"error": "Krishna is in samadhi. Try again in a moment."}), 500
+        return jsonify({"error": f"DEBUG: {type(e).__name__}: {str(e)}"}), 500
 
 
 @app.route("/rate", methods=["POST"])
